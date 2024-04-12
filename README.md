@@ -175,4 +175,4 @@ sequenceDiagram
 
 
 ## 5. 이벤트스토밍
-
+![eventstorming](docs/eventstroming.png)
