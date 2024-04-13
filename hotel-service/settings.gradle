@@ -1,1 +1,13 @@
 rootProject.name = 'hotel-service'
+
+// domain
+include 'hotel-domain'
+
+// usecase
+include 'hotel-usecase'
+
+// infrastructure
+include 'hotel-infrastructure'
+
+// bootstrap
+include 'hotel-bootstrap'

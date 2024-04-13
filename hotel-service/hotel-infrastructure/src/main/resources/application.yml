@@ -1,8 +1,6 @@
 spring:
-  application:
-    name: hotel-service
   datasource:
-    url: jdbc:postgresql://localhost:5431/mydatabase
+    url: jdbc:postgresql://localhost:5420/mydatabase
     username: myuser
     password: secret
     driver-class-name: org.postgresql.Driver
@@ -16,14 +14,3 @@ spring:
         format_sql: false
         use_sql_comments: false
         default_batch_fetch_size: 1000
-  docker:
-    compose:
-      file: hotel-service/compose.yaml
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-  instance:
-    instance-id: ${spring.application.name}:${instanceId:${random.value}}
-server:
-  port: 0
