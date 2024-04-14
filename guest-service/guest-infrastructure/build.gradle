@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.4'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+dependencies {
+    implementation(project(':guest-domain'))
+    implementation(project(':guest-usecase'))
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "io.github.openfeign.querydsl:querydsl-jpa-spring:${queryDslVersion}"
+    runtimeOnly 'org.postgresql:postgresql'
+
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    implementation "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    annotationProcessor(
+            'org.springframework.boot:spring-boot-configuration-processor',
+            "io.github.openfeign.querydsl:querydsl-jpa-spring:${queryDslVersion}",
+            'org.projectlombok:lombok',
+            "org.mapstruct:mapstruct-processor:${mapstructVersion}",
+            'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+    )
+
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.boot:spring-boot-testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
