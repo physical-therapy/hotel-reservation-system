@@ -1,0 +1,13 @@
+rootProject.name = 'fare-service'
+
+// domain
+include 'fare-domain'
+
+// usecase
+include 'fare-usecase'
+
+// infrastructure
+include 'fare-infrastructure'
+
+// bootstrap
+include 'fare-bootstrap'

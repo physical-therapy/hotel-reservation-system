@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: fare-service
+  docker:
+    compose:
+      file: fare-service/fare-bootstrap/compose.yaml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+server:
+  port: 0

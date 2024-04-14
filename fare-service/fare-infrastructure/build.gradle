@@ -5,8 +5,8 @@ plugins {
 }
 
 dependencies {
-    implementation(project(':hotel-domain'))
-    implementation(project(':hotel-usecase'))
+    implementation(project(':fare-domain'))
+    implementation(project(':fare-usecase'))
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation "io.github.openfeign.querydsl:querydsl-jpa-spring:${queryDslVersion}"
