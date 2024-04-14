@@ -1,0 +1,13 @@
+rootProject.name = 'guest-service'
+
+// domain
+include 'guest-domain'
+
+// usecase
+include 'guest-usecase'
+
+// infrastructure
+include 'guest-infrastructure'
+
+// bootstrap
+include 'guest-bootstrap'
