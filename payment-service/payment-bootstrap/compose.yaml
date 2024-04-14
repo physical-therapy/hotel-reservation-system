@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: 'postgres:16.2'
+    container_name: 'payment_postgres'
+    restart: always
+    ports:
+      - '5423:5432'
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: mydatabase

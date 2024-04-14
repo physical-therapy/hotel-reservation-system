@@ -1,0 +1,13 @@
+rootProject.name = 'payment-service'
+
+// domain
+include 'payment-domain'
+
+// usecase
+include 'payment-usecase'
+
+// infrastructure
+include 'payment-infrastructure'
+
+// bootstrap
+include 'payment-bootstrap'
