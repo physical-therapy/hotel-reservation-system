@@ -1,0 +1,13 @@
+rootProject.name = 'reservation-service'
+
+// domain
+include 'reservation-domain'
+
+// usecase
+include 'reservation-usecase'
+
+// infrastructure
+include 'reservation-infrastructure'
+
+// bootstrap
+include 'reservation-bootstrap'
