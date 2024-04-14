@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(':hotel-domain'))
+    implementation(project(':fare-domain'))
 
     implementation 'org.springframework.boot:spring-boot-starter'
 }

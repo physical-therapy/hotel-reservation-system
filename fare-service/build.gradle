@@ -19,7 +19,7 @@ ext {
 }
 
 allprojects {
-    group = 'org.physicaltherapy.hotelservice'
+    group = 'org.physicaltherapy.fareservice'
     version = '0.0.1-SNAPSHOT'
 
     repositories {
