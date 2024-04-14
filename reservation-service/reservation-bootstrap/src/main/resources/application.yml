@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: reservation-service
+  docker:
+    compose:
+      file: reservation-service/reservation-bootstrap/compose.yaml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+server:
+  port: 0
