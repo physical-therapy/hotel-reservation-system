@@ -1,10 +1,14 @@
-package org.physicaltherapy.hotelservice.domain;
+package org.physicaltherapy.hotelservice.domain.business;
+
+import org.physicaltherapy.hotelservice.domain.Organization;
+import org.physicaltherapy.hotelservice.domain.Place;
 
 import java.util.Collection;
 
 /**
  * 특정 실제 사업체 또는 조직의 지점이다.<p>
  * Ex) 레스토랑, 레스토랑 체인의 특정 지점, 은행 지점, 의료 기관, 클럽, 볼링장
+ * @see <a href="https://schema.org/LocalBusiness">LocalBusiness</a>
  */
 public interface LocalBusiness extends Place, Organization {
 

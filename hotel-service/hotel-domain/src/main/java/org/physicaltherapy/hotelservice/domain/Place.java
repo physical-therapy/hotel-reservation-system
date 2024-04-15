@@ -1,7 +1,10 @@
 package org.physicaltherapy.hotelservice.domain;
 
+import org.physicaltherapy.hotelservice.domain.rating.AggregateRating;
+
 /**
  * 다소 고정된 물리적 확장을 갖는 개체이다.
+ * @see <a href="https://schema.org/Place">Place</a>
  */
 public interface Place {
 
@@ -13,7 +16,7 @@ public interface Place {
     /**
      * 리뷰 또는 평점 모음을 기반으로하는 항목의 전체 평점
      */
-    String getAggregateRating();
+    AggregateRating getAggregateRating();
 
     /**
      * 관련 로고
