@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  *
  * @see <a href="https://schema.org/Action">Action</a>
  */
-public sealed class Action permits TradeAction {
+public sealed class Action permits TradeAction, TransferAction {
 
     /**
      * 작업의 현재 처리를 나타낸다.
