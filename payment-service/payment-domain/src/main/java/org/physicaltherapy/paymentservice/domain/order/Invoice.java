@@ -1,4 +1,6 @@
-package org.physicaltherapy.paymentservice.domain;
+package org.physicaltherapy.paymentservice.domain.order;
+
+import org.physicaltherapy.paymentservice.domain.PriceSpecification;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
