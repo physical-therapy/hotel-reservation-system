@@ -7,6 +7,9 @@ package org.physicaltherapy.paymentservice.domain.action;
  */
 public final class SellAction extends TradeAction {
 
+    /**
+     * 물건을 구매한 참가자/사람/조직이다.
+     */
     private String buyerId;
 
 }

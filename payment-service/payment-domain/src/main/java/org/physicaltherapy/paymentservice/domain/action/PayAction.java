@@ -7,6 +7,9 @@ package org.physicaltherapy.paymentservice.domain.action;
  */
 public final class PayAction extends TradeAction {
 
+    /**
+     * 참가자의 하위 속성이다. 작업을 수신하는 참가자이다.
+     */
     private String recipientId;
-
+    
 }
