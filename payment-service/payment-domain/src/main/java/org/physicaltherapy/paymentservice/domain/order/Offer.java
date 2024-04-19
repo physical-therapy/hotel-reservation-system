@@ -1,5 +1,9 @@
-package org.physicaltherapy.paymentservice.domain;
+package org.physicaltherapy.paymentservice.domain.order;
 
+
+import org.physicaltherapy.paymentservice.domain.AggregateRating;
+import org.physicaltherapy.paymentservice.domain.PriceSpecification;
+import org.physicaltherapy.paymentservice.domain.QuantitativeValue;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
